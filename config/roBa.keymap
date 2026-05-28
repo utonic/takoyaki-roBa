@@ -83,7 +83,7 @@
 &kp Q               &kp W          &kp E         &kp R                   &kp T                             &kp Y   &kp U  &kp I      &kp O    &kp P
 &mt LEFT_CONTROL A  &kp S          &kp D         &kp F                   &kp G   &trans         &kp MINUS  &kp H   &kp J  &kp K      &kp L    &kp SEMICOLON
 &mt LEFT_SHIFT Z    &kp X          &kp C         &kp V                   &kp B   &kp GRAVE      &kp SQT    &kp N   &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&trans              &kp BACKSLASH  &kp LEFT_ALT  &mt LEFT_GUI LC(SPACE)  &trans  &trans         &trans     &trans                             &trans
+&trans              &kp BACKSLASH  &kp LEFT_ALT  &mt LEFT_GUI LC(SPACE)  &trans  &trans         &trans     &trans                             &lt 5 ESCAPE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -107,17 +107,6 @@
             >;
         };
 
-        symbols {
-            bindings = <
-&kp ESCAPE      &kp LC(LS(TAB))         &kp UP_ARROW    &kp LC(TAB)              &trans                       &trans  &trans  &trans  &trans  &trans
-&kp HOME        &kp LEFT_ARROW          &kp DOWN_ARROW  &kp RIGHT_ARROW          &kp END  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&kp LEFT_SHIFT  &kp LG(LS(LEFT_ARROW))  &trans          &kp LG(LS(RIGHT_ARROW))  &trans   &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans          &trans                  &trans          &trans                   &trans   &trans      &trans  &trans                          &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
-        };
-
         MOUSE {
             bindings = <
 &trans    &trans  &trans    &trans    &trans                      &trans  &trans    &trans    &trans  &trans
@@ -136,7 +125,7 @@
             >;
         };
 
-        layer_6 {
+        system {
             bindings = <
 &trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
