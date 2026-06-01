@@ -1,5 +1,4 @@
 #include "roBa.dtsi"
-#include <input/processors.dtsi>
 
 &default_transform {
     col-offset = <6>;
@@ -22,11 +21,6 @@
         device = <&trackball>;
         scale-multiplier = <6>;
         scale-divisor = <5>;
-
-        scrl {
-            layers = <4>;
-            input-processors = <&zip_scroll_scaler 4 5>;
-        };
     };
 };
 
