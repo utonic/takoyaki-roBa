@@ -82,9 +82,9 @@
         default {
             bindings = <
 &kp Q               &kp W      &kp E             &kp R                   &kp T                                                      &kp Y            &kp U  &kp I      &kp O    &kp P
-&mt LEFT_CONTROL A  &lt 3 S    &kp D             &kp F                   &kp G        &kp SQT                &kp MINUS              &kp H            &kp J  &kp K      &lt 3 L  &kp SEMICOLON
+&mt LEFT_CONTROL A  &kp S      &kp D             &kp F                   &kp G        &kp SQT                &kp MINUS              &kp H            &kp J  &kp K      &lt 3 L  &kp SEMICOLON
 &mt LEFT_SHIFT Z    &kp X      &kp C             &kp V                   &kp B        &kp DOUBLE_QUOTES      &kp UNDERSCORE         &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp ESC             &kp GRAVE  &mt LEFT_ALT TAB  &mt LEFT_GUI LC(SPACE)  &lt 1 SPACE  &lt 5 DEL              &mt RIGHT_SHIFT ENTER  &lt 2 BACKSPACE                             &lt 4 PIPE
+&lt 5 ESCAPE        &kp GRAVE  &mt LEFT_ALT TAB  &mt LEFT_GUI LC(SPACE)  &lt 3 SPACE  &lt 1 DEL              &mt RIGHT_SHIFT ENTER  &lt 2 BACKSPACE                             &lt 4 PIPE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -110,10 +110,10 @@
 
         MOUSE {
             bindings = <
-&trans    &trans  &trans    &trans    &trans                      &trans  &trans    &trans    &trans  &trans
-&mkp MB3  &trans  &mkp MB2  &mkp MB1  &trans  &trans      &trans  &trans  &mkp MB1  &mkp MB2  &trans  &mkp MB3
-&trans    &trans  &trans    &trans    &trans  &trans      &trans  &trans  &trans    &trans    &trans  &trans
-&trans    &trans  &trans    &trans    &trans  &trans      &trans  &trans                              &trans
+&trans              &trans  &trans    &trans    &trans                                               &trans  &trans    &trans    &trans  &trans
+&kp LC(UP_ARROW)    &trans  &mkp MB2  &mkp MB1  &trans  &trans                  &trans               &trans  &mkp MB1  &mkp MB2  &trans  &mkp MB3
+&kp LC(DOWN_ARROW)  &trans  &trans    &trans    &trans  &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)  &trans  &trans    &trans    &trans  &trans
+&trans              &trans  &trans    &trans    &trans  &trans                  &trans               &trans                              &trans
             >;
         };
 
