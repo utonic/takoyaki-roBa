@@ -11,7 +11,7 @@
 &trackball {
     // automouse-layer = <3>;
 
-    scroll-layers = <4>;
+    scroll-layers = <1 4>;
 
     // arrows {
     //     layers = <3>;
