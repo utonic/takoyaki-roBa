@@ -32,36 +32,56 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
+            key-positions = <0 1>;
         };
 
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+        left-bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <13 12>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
+        right-bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <18 19>;
         };
 
-        double_quotation {
+        left-brace {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <25 24>;
+        };
+
+        right-brace {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <30 31>;
+        };
+
+        minus {
+            bindings = <&kp MINUS>;
+            key-positions = <7 8>;
+        };
+
+        underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <8 9>;
+        };
+
+        single-quote {
+            bindings = <&kp SINGLE_QUOTE>;
+            key-positions = <19 20>;
+        };
+
+        double-quote {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <20 21>;
-        };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
         };
     };
 
     macros {
-        to_layer_0: to_layer_0 {
+        combo: combo {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-            label = "TO_LAYER_0";
+            label = "COMBO";
         };
     };
 
@@ -69,7 +89,7 @@
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
+            bindings = <&mo>, <&combo>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
