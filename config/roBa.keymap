@@ -112,10 +112,10 @@
 
         symbols {
             bindings = <
-&trans           &trans       &trans    &trans      &trans                                                &trans     &trans         &kp LS(LG(NUMBER_5))  &kp LS(LC(LG(NUMBER_3)))  &kp LS(LG(LC(NUMBER_4)))
-&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp LEFT_BRACE        &kp RIGHT_BRACE    &kp CARET  &kp AMPERSAND  &kp ASTERISK          &kp LS(LG(NUMBER_3))      &kp LS(LG(NUMBER_4))
-&trans           &trans       &trans    &trans      &trans       &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &trans     &trans         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &kp BACKSLASH
-&trans           &trans       &trans    &trans      &trans       &trans                &trans             &trans                                                                    &trans
+&trans           &trans       &trans    &trans      &trans                                                &trans     &trans         &kp LS(LG(NUMBER_5))  &kp LS(LG(NUMBER_3))   &kp LS(LG(NUMBER_4))
+&kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &kp LEFT_BRACE        &kp RIGHT_BRACE    &kp CARET  &kp AMPERSAND  &kp ASTERISK          &kp TILDE              &kp COLON
+&trans           &trans       &trans    &trans      &trans       &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &trans     &trans         &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSLASH
+&trans           &trans       &trans    &trans      &trans       &trans                &trans             &trans                                                                 &trans
             >;
         };
 
@@ -130,19 +130,19 @@
 
         func_mouse {
             bindings = <
-&kp LC(LG(Q))     &kp F7  &kp F8  &kp F9  &kp F10                                               &kp PAGE_UP      &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans  &trans
-&kp LC(UP_ARROW)  &kp F4  &kp F5  &kp F6  &kp F11  &trans                  &trans               &kp PAGE_DOWN    &mkp MB1              &mkp MB2               &trans  &mkp MB3
-&trans            &kp F1  &kp F2  &kp F3  &kp F12  &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)  &trans           &kp C_MUTE            &trans                 &trans  &trans
-&trans            &trans  &trans  &trans  &trans   &trans                  &kp C_VOLUME_DOWN    &kp C_VOLUME_UP                                                       &trans
+&kp LC(LG(Q))     &kp F7  &kp F8  &kp F9  &kp F10                                                     &kp PAGE_UP      &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)  &trans  &trans
+&kp LC(UP_ARROW)  &kp F4  &kp F5  &kp F6  &kp F11  &trans                  &kp LS(LA(LC(LG(GRAVE))))  &kp PAGE_DOWN    &mkp MB1              &mkp MB2               &trans  &mkp MB3
+&trans            &kp F1  &kp F2  &kp F3  &kp F12  &kp LC(LEFT_ARROW)      &kp LC(RIGHT_ARROW)        &trans           &kp C_MUTE            &trans                 &trans  &trans
+&trans            &trans  &trans  &trans  &trans   &trans                  &kp C_VOLUME_DOWN          &kp C_VOLUME_UP                                                       &trans
             >;
         };
 
         scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &kp LS(LG(NUMBER_3))      &kp LS(LG(NUMBER_4))
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LS(LC(LG(NUMBER_3)))  &kp LS(LC(LG(NUMBER_4)))
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans                    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                            &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP K_SCROLL_DOWN>;
