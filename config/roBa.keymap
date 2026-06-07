@@ -74,6 +74,11 @@
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <20 21>;
         };
+
+        clipboard {
+            bindings = <&cmd_spc_4>;
+            key-positions = <26 24>;
+        };
     };
 
     macros {
@@ -87,7 +92,7 @@
         cmd_spc_4: cmd_spc_4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(SPACE)>, <&kp LG(NUMBER_4)>;
+            bindings = <&kp LG(SPACE) &kp LG(NUMBER_4)>;
             label = "CMD_SPC_4";
         };
     };
