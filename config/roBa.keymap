@@ -83,6 +83,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "COMBO";
         };
+
+        cmd_spc_4: cmd_spc_4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(SPACE)>, <&kp LG(NUMBER_4)>;
+            label = "CMD_SPC_4";
+        };
     };
 
     behaviors {
