@@ -76,8 +76,8 @@
         };
 
         clipboard {
-            bindings = <&kp A>;
-            key-positions = <26 24>;
+            bindings = <&cmd_spc_4>;
+            key-positions = <23 25>;
         };
     };
 
